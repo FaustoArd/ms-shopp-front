@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="row">
+   <div class="col-md-3"></div>
+   <div class="col-md-8">
+<div class="mt-3" *ngFor="let item of items" >
+  <div class="card w-75 h-75 mb-3" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="./assets/images/laptop2.jpg" class="img-fluid rounded-start w-75 mt-5 ms-4" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 id="description" class="card-title fs-5">{{item.description}}</h5>
+        
+          <p id="price"class="card-text fw-bold fs-5">{{item.price | currency: '$'}}</p>
+          <p id="price"class="card-text">en 12x $160.234</p>
+          <p id="arrive" class="btn btn-sm ">Llega gratis mañana</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
